@@ -61,7 +61,7 @@ nav a:hover{
     color: white;
 }
 #hero-msg h1 {
-    color: white;
+    color: rgb(0, 0, 0);
     padding-top: 10rem;
     
 }
@@ -73,6 +73,7 @@ nav a:hover{
 }
 #hero-img{
     width: 100%;
+    
 }
 
 
