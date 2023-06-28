@@ -100,10 +100,12 @@ p.colored {
 }
 .pix{
   display: flex;
+  
 }
 #pix1{
   width: 300px;
   height: 200;
+  padding: 5px;
 }
 
 nav {
