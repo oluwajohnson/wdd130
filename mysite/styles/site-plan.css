@@ -98,10 +98,10 @@ p.colored {
   background-color: var(--paragraph-background-color);
   color: var(--paragraph-color-on-color);
 }
-div .pix1{
-  display: inline;
+.pix{
+  display: flex;
 }
-.pix1 img{
+#pix1{
   width: 300px;
   height: 200;
 }
