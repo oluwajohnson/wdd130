@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whitewater Rafting Vacations | Dry Oar Boating | FAQ</title>
     <link rel="stylesheet" href="styles/faq.css">
+    
 </head>
 <body>
     <div id="content">
@@ -30,8 +31,10 @@
             </section>
         </div>
         <main class="home-grid">
+
             
-            <div class="faq_area section_padding_130" id="faq">
+            
+          <div class="faq_area section_padding_130" id="faq">
                 <div class="faq_area section_padding_130" id="faq">
                     <button class="accordion">Is this a good trip for kids? What are the age ranges you allow?</button>
                     <div class="panel">
@@ -111,7 +114,7 @@
                       <p>If you have specific dates you need, we recommend booking a year in advance. If you can be more flexible 6 months in advance is usually sufficient.</p>
                     </div>
                 </div>
-            </div
+            </div 
            
         </main>
         <footer>
@@ -134,3 +137,25 @@
     </div>
 </body>
 </html>
+
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+        panel.style.display = "none";
+        } else {
+        panel.style.display = "block";
+        }
+    });
+    }
+</script>

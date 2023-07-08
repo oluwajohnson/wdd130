@@ -1,3 +1,6 @@
+
+
+
 #content{
     max-width: 1600px;
     margin: 0 auto;
@@ -223,23 +226,21 @@ main section img {
 }
 
 
+
+
+
 /* ------------------------------------------------------------------------------------------------ */
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: #eee;
     color: #444;
-    /* cursor: pointer; */
+    cursor: pointer;
     padding: 18px;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
-    font-size: large;
-    /* display: none; */
-    color: #7d5705;
-    font-weight: bold;
-   
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -251,9 +252,11 @@ main section img {
   .panel {
     padding: 0 18px;
     background-color: white;
-    /* display: none; */
-    /* overflow: hidden; */
+    display: none;
+    overflow: hidden;
   }
   .panel p{
     text-align: justify;
   }
+
+/* ----------------------------------------------------------- */
