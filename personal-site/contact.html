@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JohnsonServices Ltd</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+    <body>
+    
+
+          <div id="content">
+
+              <header>
+                  <a id="logo_link" href="index.html">
+                      <img class="logo" src="images/Johnson_Logo.jpg" alt="Johnson">
+                  </a>
+                  <nav>
+                      <a href="index.html">Home</a>
+                      <a href="services.html">Services</a>
+                      <a href="contact.html">Contact</a>
+                  </nav>
+              </header>
+
+
+            <!-- --------------------------Hero Page------------------- -->
+           
+
+                <div class="form_container">
+                    <div style="width:800px;margin-left: auto;
+                                margin-right: auto;">
+                        <div id="feedback"></div>
+                        <form action="/personal-site/contact.html">
+                    
+                            <label for="fname">First Name</label> 
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        
+                        
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        
+                            <input type="submit" value="Submit">
+                        
+                        </form>
+                  </div>
+            </div>
+              
+
+
+
+            <!-- ------------------------------------Social Media----------------------------- -->
+            <div class="icon-bar">
+              <a href="www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="www.google.com" class="google"><i class="fa fa-google"></i></a>
+              <a href="www.linkedin.com" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="www.youtube.com" class="youtube"><i class="fa fa-youtube"></i></a>
+            </div>
+
+
+
+
+          </div>
+        
+  
+
+
+     
+        <footer>
+          <p>Raincode Service Ltd - &copy;2023</p>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="services.html">Service</a></p>
+          <p><a href="contact.html">Contact</a></p>
+          <div class="social">
+              <a href="https://facebook.com" target="_blank">
+                  <img src="images/facebook.png" alt="fb icon">
+              </a>
+              <a href="https://twitter.com">
+                  <img src="images/twitter.png" alt="twitter icon">
+              </a>
+              <a href="https://instagram.com">
+                  <img src="images/instagram.png" alt="instagram icon">
+              </a>
+          </div>
+        </footer>
+    
+
+
+      
+
+    </body>
+</html>
+
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+
+// /---------------------------FAQ-------------------------------------/ 
+var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+        panel.style.display = "none";
+        } else {
+        panel.style.display = "block";
+        }
+    });
+    }
+
+// /---------------------------------------Contact----------------------------/ 
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+
+
+</script>

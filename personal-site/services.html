@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JohnsonServices Ltd</title>
+    <link rel="stylesheet" href="styles/service.css">
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+    <body>
+    
+
+          <div id="content">
+
+              <header>
+                  <a id="logo_link" href="index.html">
+                      <img class="logo" src="images/Johnson_Logo.jpg" alt="Johnson">
+                  </a>
+                  <nav>
+                      <a href="index.html">Home</a>
+                      <a href="services.html">Services</a>
+                      <a href="contact.html">Contact</a>
+                  </nav>
+              </header>
+
+
+            <!-- --------------------------Hero Page------------------- -->
+            <div style=" width: 100%;">
+                <div class="bg-image "><img src="images/farmer1.jpg" alt="farmer1" style="width: 100%; height: 400px;"></div>
+                <div class="bg-image "><img src="images/farmer2.jpg" alt="farmer2" style="width: 100%; height: 400px;"></div>
+                <div class="bg-image "><img src="images/farmer3.jpg" alt="farmer3" style="width: 100%; height: 400px;"></div>
+                <div class="bg-image "><img src="images/farmer4.jpg" alt="farmer4" style="width: 100%; height: 400px;"></div>
+                <div class="bg-image "><img src="images/farmer1.jpg" alt="farmer1" style="width: 100%; height: 400px;"></div>
+                <div class="bg-image "><img src="images/farmer2.jpg" alt="farmer2" style="width: 100%; height: 400px;"></div>
+                
+                <div class="bg-text">
+                  <p style="text-align: center;">WELCOME NOTE</p>
+                    <h3> Areas that everybody needs help in</h3>
+                    <p><b> Portrait Photography:</b> Whether you're looking for professional headshots, family portraits, or personal branding images, I specialize in capturing the unique essence and personality of individuals. With a keen eye for detail and a knack for making people feel at ease, I strive to create stunning portraits that reflect your true self.</p>
+                    <p><b> Wedding Photography:</b>  Your wedding day is one of the most important days of your life, and I am dedicated to capturing every precious moment and emotion. From the anticipation and excitement of getting ready to the heartfelt exchange of vows and the joyous celebration, I document your love story with a blend of candid shots and carefully composed portraits. I work closely with you to understand your vision and ensure that your wedding album is a timeless keepsake filled with beautiful memories.</p>
+                    <p><b> Event Photography:</b>  Whether it's a corporate event, a milestone birthday party, or a special celebration, I offer comprehensive event photography services. I have the expertise to capture the atmosphere, emotions, and key moments of your event. From candid shots of guests mingling to formal group portraits, I ensure that every important detail is documented, allowing you to relive the occasion for years to come.</p>
+                    <p><b> Landscape and Travel Photography:</b>  As an avid traveler and nature enthusiast, I have a deep appreciation for the beauty of the world around us. Through my landscape and travel photography, I aim to transport viewers to breathtaking locations and evoke a sense of wonder. From majestic mountains to serene seascapes, my images capture the awe-inspiring power of nature and the unique charm of different cultures and places.</p>
+                    <p><b>Commercial Photography:</b>  Whether you need product shots for your e-commerce store, professional images for your marketing materials, or interior photography for your business, I offer high-quality commercial photography services. With meticulous attention to detail and a focus on showcasing your products or spaces in the best light, I deliver compelling visuals that effectively convey your brand message. </p>
+                </div>
+            </div>
+
+
+            <!-- ------------------------------------Social Media----------------------------- -->
+            <div class="icon-bar">
+              <a href="www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="www.google.com" class="google"><i class="fa fa-google"></i></a>
+              <a href="www.linkedin.com" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="www.youtube.com" class="youtube"><i class="fa fa-youtube"></i></a>
+            </div>
+
+
+
+
+          </div>
+        
+  
+
+
+     
+        <footer>
+          <p>Raincode Service Ltd - &copy;2023</p>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="services.html">Service</a></p>
+          <p><a href="contact.html">Contact</a></p>
+          <div class="social">
+              <a href="https://facebook.com" target="_blank">
+                  <img src="images/facebook.png" alt="fb icon">
+              </a>
+              <a href="https://twitter.com">
+                  <img src="images/twitter.png" alt="twitter icon">
+              </a>
+              <a href="https://instagram.com">
+                  <img src="images/instagram.png" alt="instagram icon">
+              </a>
+          </div>
+        </footer>
+    
+
+
+      
+
+    </body>
+</html>
+
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+
+// /---------------------------FAQ-------------------------------------/ 
+var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+        panel.style.display = "none";
+        } else {
+        panel.style.display = "block";
+        }
+    });
+    }
+
+
+</script>
