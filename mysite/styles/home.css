@@ -1,0 +1,139 @@
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+    /* margin-top: 10px; */
+}
+header{
+    background-color: #7d5705;
+    display: grid;
+    grid-template-columns: 150px auto;
+    opacity: 0.8;
+    margin-top: 0;
+}
+
+nav a{
+  /* float: left; */
+  padding: 35px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  /* width: 15%;  */
+  /* text-align: center; */
+    
+}
+
+
+nav {
+    /* width: 100%; */
+    background-color: #555;
+    /* overflow: auto; */
+    display: flex;
+    
+    justify-content: space-around;
+}
+
+nav a:hover{
+    background-color: #ffffff;
+    color: rgb(2, 76, 13);
+    text-decoration: none;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+body{
+    background-color: #ffffff;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+#background {
+    height: 725px;
+    background-color: #deb347;
+    display: grid;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo{
+    width: 80px;
+    border-radius: 50%; 
+}
+
+#logo_link{
+    padding-top: 5px;
+}  
+
+
+main section img {
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 14px;
+    text-align: justify;
+    padding: 15px;
+}
+div .client-text{
+    width: 950px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.client{
+    /* display: inline; */
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    align-items: center;
+    width: 900px;
+    
+}
+.inside_client {
+    display: block;
+    padding: 5px;
+    float: right;
+}
+.inside_client img{
+    width: 300px;
+    height: 200px;
+}
+
+
+/* footer css--------------------------------- */
+footer{
+    background-color: #101018;
+    color: rgb(255, 255, 255);
+    padding: 25px 50px;
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+footer p{
+    font-size: 1.2em;
+    padding: 5px 50px;
+}
+footer .social img{
+    padding-top: 15px;
+}
+footer a:hover{ 
+    color: rgb(2, 76, 13);
+    text-decoration: none;
+}
+.icon {
+    width: 60px;
+    height: 60px;
+    padding-top: 10px;
+}
