@@ -2,7 +2,7 @@ body {
     text-align: center;
   }
 
-nav {
+/* nav {
     background-color: steelblue;
     padding: 10px;
   }
@@ -10,7 +10,38 @@ nav {
 a {
     color: white;
     margin: 40px;
+  } */
+
+
+  nav a{
+    /* float: left; */
+    padding: 35px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    /* width: 15%;  */
+    /* text-align: center; */
+      
   }
+  
+  
+  nav {
+      /* width: 100%; */
+      background-color: #555;
+      /* overflow: auto; */
+      display: flex;
+      
+      justify-content: space-around;
+  }
+  
+  nav a:hover{
+      background-color: #ffffff;
+      color: rgb(2, 76, 13);
+      text-decoration: none;
+  }
+  
+
+
 
 h1 {
 color: steelblue;
