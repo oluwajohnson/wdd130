@@ -28,25 +28,34 @@
     display: block;
     width: 100%;
     height: auto;
+   
+   
   }
   
 
 .hero{
     position: relative;
+    text-align: center;
 }
+
 .hero h1{
     position: absolute;
+    top: 20%;
+    left: 10%;
 }
 .hero article{
     position: absolute;
+    top: 30%;
+    left: 10%;
 }
 article .img{
     width: 50px;
-  
-    top: 0;
+    float: left;
+   
     /* height: 40px; */
   }
 
 h2{
     color: var(--primary-color);
+    
 }
