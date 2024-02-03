@@ -12,12 +12,24 @@
   background-color: #ddd;
   color: #000;
 }
+nav {
+  background-color: steelblue;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff; 
+}
 
 
 
-main {
-    max-width: 840px;
-  }
   aside {
     width: 20rem;
     text-align: center;
@@ -52,3 +64,31 @@ main {
     border-top: 1px solid #000;
     text-align: center;
   }
+  header,.grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+  }
+  .grid {
+    display: grid;
+    align-items: center;
+  }
+  main {
+    grid-column: 2/3;
+    margin: 1rem;
+  }
+  aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  aside h1{
+    border-bottom:1px solid #00a2ff;
+    padding-bottom: 3px;
+ 
+  }
+  .pride{
+    margin-top: 5px;
+    text-justify: distribute;
+  }
+  
