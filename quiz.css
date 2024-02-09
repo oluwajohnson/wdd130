@@ -40,3 +40,36 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
   }
+  label, input, button, select, textarea {
+    font-family: Roboto, Arial, sans-serif;
+  }
+  div{
+    text-align: left;
+    padding: 1rem;
+    background-color: black;
+    color: #fff;
+    font-size: small;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+  }
+  button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+  }
+  
+  button:hover {
+    background-color: darkgreen;
+  }
+  footer{
+    text-align: center;
+    padding-top:2rem;
+  }
