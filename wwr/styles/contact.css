@@ -192,14 +192,18 @@ footer .copyrightdiv{
 form {
     /* Center the form on the page */
     margin: 0 auto;
-    width: 400px;
+    width: 500px;
     /* Form outline */
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
   }
   
   ul {
+   
     list-style: none;
     padding: 0;
     margin: 0;
@@ -207,13 +211,19 @@ form {
   
   form li + li {
     margin-top: 1em;
+    flex-direction: row;
+    width: 400px;
   }
   
   label {
     /* Uniform size & alignment */
     display: inline-block;
-    width: 90px;
+    /* width: 200px; */
     text-align: right;
+  }
+  form div .form{
+    display: inline-block;
+    /* flex-direction: row; */
   }
   
   input,
@@ -223,7 +233,7 @@ form {
     font: 1em sans-serif;
   
     /* Uniform text field size */
-    width: 300px;
+    width: 200px;
     box-sizing: border-box;
   
     /* Match form field borders */
@@ -234,6 +244,10 @@ form {
   textarea:focus {
     /* Additional highlight for focused elements */
     border-color: #000;
+  }
+
+  input #html{
+
   }
   
   textarea {
