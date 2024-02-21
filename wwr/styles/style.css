@@ -32,13 +32,26 @@ nav {
     /* overflow: auto; */
     display: flex;
     
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 nav a:hover{
     background-color: #ffffff;
     color: rgb(2, 76, 13);
     text-decoration: none;
 }
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.logo{
+    width: 80px;
+    border-radius: 50%; 
+}
+
+
+
+
 #hero{
     /* border: 2px solid rgb(232, 221, 178); */
     display: grid;
@@ -73,11 +86,7 @@ nav a:hover{
 }
 
 
-#logo_link {
-    padding-top: 5px;
-    justify-self: center;
-    align-self: center;
-}
+
 .button-box{
     text-align: center;
     padding-bottom: 35px;
@@ -175,9 +184,17 @@ footer{
     color: rgb(255, 255, 255);
     padding: 25px 50px;
     margin-top: 200px; 
-    display: flex;
+    display: block;
     justify-content: space-around;
     align-items: center;
+}
+footer input{
+    width: 30rem;
+    height: 2rem;
+    margin-bottom: 20px;
+}
+footer .item{
+   display: flex;
 }
 footer a{
     color:rgb(255, 255, 255);
@@ -199,18 +216,13 @@ footer a:hover{
     height: 60px;
     padding-top: 10px;
 }
-.logo{
-    width: 80px;
-    border-radius: 50%; 
-}
+
 .card-img {
     width: 100%;
 }
 
 
-#logo_link{
-    padding-top: 5px;
-}  
+ 
 
 .rivers-card, .camping-card, .rapids-card   {
     margin: 200px 0;
@@ -259,6 +271,11 @@ main section img {
     }
     footer {
         margin-top: 25px;
+        /* display: ; */
     }
+    footer .item{
+        display: block;
+     }
+  
 }
    

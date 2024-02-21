@@ -59,6 +59,10 @@ nav a:hover{
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
+    /* background-color: #101018; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 #hero-msg h4 {
     color: white;
@@ -176,6 +180,7 @@ body{
     font-size: .8em;
     padding-bottom: 15px;
 }
+
 footer{
     background-color: #101018;
     color: rgb(255, 255, 255);
@@ -277,6 +282,11 @@ main section img {
     nav a {
         display: block;
         padding: 15px;
+    }
+    #hero-msg h1 {
+        color: rgb(0, 0, 0);
+        padding-top: 0rem;
+        
     }
     .home-image{
         display: block;
