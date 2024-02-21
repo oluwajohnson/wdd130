@@ -174,10 +174,12 @@ body{
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
+    color: #ffffff;
 }
 .msg p{
     font-size: .8em;
     padding-bottom: 15px;
+    color: #ffffff;
 }
 footer{
     background-color: #101018;

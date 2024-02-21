@@ -168,28 +168,37 @@ h2{
   width: 310px;
 
 }
- footer{
-  display: flex;
-  justify-content: center;
+footer{
+  background-color: #101018;
+  color: rgb(255, 255, 255);
+  padding: 25px 50px;
+  margin-top: 200px; 
+  display: block;
+  justify-content: space-around;
   align-items: center;
-  
- }
-
+}
+footer input{
+  width: 30rem;
+  height: 2rem;
+  margin-bottom: 20px;
+}
+footer .item{
+ display: flex;
+}
+footer a{
+  color:rgb(255, 255, 255);
+  text-decoration: none;
+}
 footer p{
-  text-align: center;
+  font-size: 1.2em;
+  padding: 5px 50px;
 }
-footer .navdiv{
-
-  width: 30%;
-  background-color: steelblue;
+footer .social img{
+  padding-top: 15px;
 }
-footer .navdiv nav{
-  justify-content:right;
- 
-}
-footer .copyrightdiv{
-  /* justify-content:right; */
-  width: 70%;
+footer a:hover{ 
+  color: rgb(2, 76, 13);
+  text-decoration: none;
 }
 
 
