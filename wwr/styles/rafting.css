@@ -200,7 +200,7 @@ section .adventureImg img {
 
 footer {
   background-color: var(--secondary-color);
-  color: var(--paragraph-color-on-color);
+  color: #000;
   padding: 25px 50px;
   margin-top: 200px;
   display: block;
