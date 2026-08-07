@@ -269,11 +269,15 @@ nav a:hover {
   bottom: 30px;
   left: 10%;
   right: 10%;
-
+  bottom: 50%;
   background-color: var(--paragraph-background-color);
   padding: 20px;
   color: var(--paragraph-color-on-color);
 }
+
+/* .article-box {
+  top: 100%;
+} */
 
 body {
   font-family: var(--paragraph-font);
