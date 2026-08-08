@@ -610,6 +610,10 @@ footer a:hover {
   .rapids-card {
     margin: 200px auto;
     width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
 
   section .adventureImg {
